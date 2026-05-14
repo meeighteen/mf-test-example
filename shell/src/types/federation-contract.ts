@@ -1,0 +1,31 @@
+export interface FastAccessCard {
+  id: string;
+  title: string;
+  icon: string;
+  props?: Record<string, any>;
+}
+
+export interface RouteNode {
+  path: string;
+  label: string;
+  children?: RouteNode[];
+}
+
+export interface ProviderSDK {
+  // http?: {
+  //   get: <T>(url: string, config?: any) => Promise<T>;
+  //   post: <T>(url: string, data?: any, config?: any) => Promise<T>;
+  // };
+  user: {
+    roles: string[];
+    token: string;
+  };
+}
+
+export interface CalculatorProviderContract {
+  getFastAccessCards: () => FastAccessCard[];
+  updateRouterTree: () => RouteNode[];
+  patchRoutesOnNavigation: () => Promise<any>;
+  getRawCSS: () => string;
+  render: (containerId: string, sdk: ProviderSDK) => void;
+}
