@@ -14,18 +14,18 @@ const App = () => {
   }, [contract]);
 
   return (
-    <div style={{ padding: '20px', border: '5px solid red' }}> 
-      <h1>Hola desde el shell</h1>
+    <div style={{ padding: '20px', border: '5px solid red', fontFamily: 'Arial, sans-serif' }}> 
+      <h1>Hello from the Consumer App</h1>
 
-      {loading && <p>Cargando calculadora...</p>}
+      {loading && <p>Loading Provider component...</p>}
       
       {!loading && !contract && (
         <p style={{ color: 'orange' }}>
-          El Shell cargó, pero la calculadora falló. Revisa el puerto 3000.
+          The Provider is Loaded. But the contract is not available. Please check the connection and try again..
         </p>
       )}
 
-      <div id="calculator-root" style={{ border: '1px solid blue', minHeight: '100px' }} />
+      <div id="calculator-root" style={{ border: '2px solid blue', padding: '10px' }} />
     </div>
   );
 };

@@ -4,19 +4,19 @@ export const ButtonWorker = () => {
         type: 'module'
         });
 
-        const payload = { id: 1, message: "hola desde el main" };
+        const payload = { id: 1, message: "Hello from the main thread" };
         worker.postMessage(payload);
 
         worker.onmessage = (event: MessageEvent) => {
-        console.log('[Main] Respuesta del worker:', event.data);
+        console.log('[Main] worker has anwsered:', event.data);
         };
 
         worker.onerror = (error) => {
-        console.error('[Main] Error en el worker:', error);
+        console.error('[Main] Error at worker:', error);
         };
     }
 
     return (
-        <button onClick={handleClick}>Example worker</button>
+        <button onClick={handleClick}>Press me to start worker</button>
     )
 }

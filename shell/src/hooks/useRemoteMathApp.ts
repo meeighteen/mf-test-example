@@ -15,7 +15,7 @@ export const useRemoteMathApp = () => {
           throw new Error("El módulo remoto no exporta un contrato válido.");
         }
 
-        const styles = remoteModule.getRawCSS(); // Mecanismo 6 
+        const styles = remoteModule.getRawCSS();
         if (typeof styles === 'string') {
             const styleTag = document.getElementById('theme-calculadora-basica') || document.createElement('style');
             styleTag.id = 'theme-calculadora-basica';

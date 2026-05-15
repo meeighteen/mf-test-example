@@ -1,10 +1,10 @@
 {
   "latestErrorEvent": {
     "code": "TYPE-001",
-    "message": "Failed to generate type declaration. Execute the below cmd to reproduce and fix the error. #TYPE-001\nargs: {\"cmd\":\"npx tsc --project C:\\\\Users\\\\josue\\\\Desktop\\\\figma-example\\\\provider-math\\\\node_modules\\\\.federation\\\\tsconfig.af8ea1a613f157bb9af24a5df71e520d.json\"}\nView the docs to see how to solve: https://module-federation.io/guide/troubleshooting/type#type-001",
+    "message": "Failed to generate type declaration. Execute the below cmd to reproduce and fix the error. #TYPE-001\nargs: {\"cmd\":\"npx tsc --project C:\\\\Users\\\\josue\\\\Desktop\\\\figma-example\\\\provider-math\\\\node_modules\\\\.federation\\\\tsconfig.119d2a702ce1d91ff1e486bc5b81de19.json\"}\nView the docs to see how to solve: https://module-federation.io/guide/troubleshooting/type#type-001",
     "args": {
-      "cmd": "npx tsc --project C:\\Users\\josue\\Desktop\\figma-example\\provider-math\\node_modules\\.federation\\tsconfig.af8ea1a613f157bb9af24a5df71e520d.json"
+      "cmd": "npx tsc --project C:\\Users\\josue\\Desktop\\figma-example\\provider-math\\node_modules\\.federation\\tsconfig.119d2a702ce1d91ff1e486bc5b81de19.json"
     },
-    "timestamp": 1778788790827
+    "timestamp": 1778882236457
   }
 }

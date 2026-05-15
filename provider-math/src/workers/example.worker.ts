@@ -6,7 +6,7 @@ interface WorkerData {
 self.onmessage = (event: MessageEvent<WorkerData>) => {
   const { id, message } = event.data;
 
-  console.log(`[Worker] Recibido: ${message} (ID: ${id})`);
+  console.log(`[Worker] Received: ${message} (ID: ${id})`);
 
   const result = `Procesado: ${message.toUpperCase()}`;
 

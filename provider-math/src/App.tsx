@@ -15,19 +15,16 @@ const App: React.FC<AppProps> = ({ userContext }) => {
 
 
   return (
-    <div className="calc-wrapper">
+    <div className="calc-wrapper" style={{ fontFamily: 'Arial, sans-serif' }}>
       <header>
-        <h2>Calculadora Basica</h2>
-        <p>Bienvenido, {userContext.roles.includes('gestor') ? 'Gestor' : 'Colaborador'}</p>
+        <h2>Provider App</h2>
+        {/* <p>Bienvenido, {userContext.roles.includes('gestor') ? 'Gestor' : 'Colaborador'}</p> */}
       </header>
 
       <main>
         {loading ? (
-          <p>Cargando provider component...</p>
+          <p>Loading provider component...</p>
         ) : (
-          // <div className="calc-container">
-          //   <button className="calc-button">Calcular</button>
-          // </div>
           <ButtonWorker />
         )}
       </main>

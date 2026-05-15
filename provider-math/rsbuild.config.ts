@@ -28,5 +28,13 @@ export default defineConfig({
       },
       shared: ['react', 'react-dom']
     })
-  ]
+  ],
+  html: {
+    title: 'Provider App',
+  },
+  dev: {
+    client: {
+      overlay: false
+    }
+  }
 });
